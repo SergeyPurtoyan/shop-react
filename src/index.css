@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.GoodList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.GoodItem{
+    width: 25%;
+    height: 100vh;
+}
+
+.GoodItem:hover{
+  background: lightsteelblue;
+  transition: 1100ms;
+}
+
+.cart{
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: lightslategrey;
+  }
+  .CartList{
+    height: 600px;
+    position: fixed;
+    top: 9rem;
+    right: 1rem;
+    background: lightslategrey;
+    padding: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .9);
+    overflow-y: scroll;
+    
+  }
+
+  .CartItem{
+    width: 500px;
+    margin: 1rem;
+  }
+
+
+  .order-count{
+    position: fixed;
+    top: 4.7rem;
+    right: 2.5rem;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 1;
+  }
